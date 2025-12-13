@@ -7,11 +7,11 @@
  * =========================================================
  */
 
+require_once '../includes/config.php';
 require_once '../includes/auth.php';
-require_once '../includes/db.php';
 
 // Enforce admin-only access
-requireRole('admin');
+requireAdmin();
 
 // Fetch dashboard statistics
 try {
@@ -23,8 +23,9 @@ try {
         'questions' => $pdo->query("SELECT COUNT(*) FROM questions")->fetchColumn()
     ];
 } catch (PDOException $e) {
-    die("Dashboard Error");
+    die("Dashboard Error: " . $e->getMessage());
 }
+
 ?>
 
 <!DOCTYPE html>
