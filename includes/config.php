@@ -21,8 +21,8 @@ define('APP_ENV', 'development'); // development | production
  */
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'cbt_system');
-define('DB_USER', 'root');
-define('DB_PASS', ''); // Set password in production
+define('DB_USER', 'shegnet_root');
+define('DB_PASS', 'Ku23@bun08@tu85'); // Set password in production
 define('DB_CHARSET', 'utf8mb4');
 
 /* ---------------------------------------------------------

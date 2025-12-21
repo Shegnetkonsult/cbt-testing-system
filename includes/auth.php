@@ -119,3 +119,15 @@ function requireAdmin()
         die('Access denied');
     }
 }
+
+/* ---------------------------------------------------------
+ | REQUIRE STUDENT
+ |----------------------------------------------------------
+ */
+function requireStudent()
+{
+    if (!isLoggedIn() || !isset($_SESSION['role']) || $_SESSION['role'] !== 'student') {
+        header('HTTP/1.1 403 Forbidden');
+        die('Access denied: Students only');
+    }
+}
