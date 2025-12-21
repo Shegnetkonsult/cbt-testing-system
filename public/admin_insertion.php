@@ -1,17 +1,10 @@
 <?php
-/**
- * =========================================================
- * SAMPLE ADMIN INSERTION
- * Project: CBT Testing System
- * Author: Adigun Joseph
- * Use this code to insert your sample admin in case of the one in SQL since it uses password hash
- * =========================================================
- */
+
 // Database connection settings
 $host = 'localhost';
 $dbname = 'cbt_system';
-$username = 'root';
-$password = '';
+$username = 'shegnet_root';
+$password = 'Ku23@bun08@tu85';
 
 // Create a PDO instance
 try {
