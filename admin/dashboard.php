@@ -142,9 +142,9 @@ try {
     <h2>Administration</h2>
 
     <nav>
-        <a href="users.php">Manage Users</a>
-        <a href="exams.php">Manage Exams</a>
-        <a href="questions.php">Manage Questions</a>
+        <a href="manage-users.php">Manage Users</a>
+        <a href="manage-exams.php">Manage Exams</a>
+        <a href="manage-questions.php">Manage Questions</a>
         <a href="results.php">View Results</a>
         <a href="settings.php">System Settings</a>
     </nav>
